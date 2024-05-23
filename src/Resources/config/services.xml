@@ -1,0 +1,31 @@
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services
+        https://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <!-- SERVICES Start -->
+        <service id="netbrothers_google_api.services.autocomplete"
+                 class="NetBrothers\NbGoogleApiBundle\Services\Autocomplete"
+                 public="true">
+        </service>
+        <service id="NetBrothers\NbGoogleApiBundle\Services\Autocomplete"
+                 alias="netbrothers_google_api.services.autocomplete"
+                 public="true">
+        </service>
+
+        <service id="netbrothers_google_api.command.autocomplete_command"
+                 class="NetBrothers\NbGoogleApiBundle\Command\AutocompleteCommand"
+                 public="true">
+            <tag name="console.command" />
+            <argument type="service" id="netbrothers_google_api.services.autocomplete" />
+        </service>
+        <!-- SERVICES ENDE -->
+
+        <!-- CONTROLLER START -->
+        <!-- CONTROLLER ENDE -->
+
+        <!-- VALIDATORS Start-->
+        <!-- VALIDATORS Ende-->
+    </services>
+</container>

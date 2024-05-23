@@ -1,0 +1,5 @@
+netbrothers_google_api:
+  nb_google_api_enable: '%env(bool:NB_GOOGLE_API_ENABLE)%'
+  nb_google_api_places_autocomplete_uri: '%env(string:NB_GOOGLE_API_PLACES_AUTOCOMPLETE_URI)%'
+  nb_google_api_places_autocomplete_request_type: '%env(string:NB_GOOGLE_API_PLACES_AUTOCOMPLETE_REQUEST_TYPE)%'
+  nb_google_api_places_autocomplete_key: '%env(string:NB_GOOGLE_PLACES_AUTOCOMPLETE_API_KEY)%'

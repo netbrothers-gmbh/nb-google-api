@@ -1,0 +1,31 @@
+{
+  "name": "netbrothers-gmbh/nb-googleapi-bundle",
+  "description": "SymfonyBundle for calling GoogleMaps",
+  "type": "symfony-bundle",
+  "keywords": ["GoogleMaps Places Api","symfony"],
+  "homepage": "https://github.com/netbrothers-gmbh/nb-google-api.git",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Stefan Wessel",
+      "email": "info@netbrothers.de",
+      "homepage": "https://netbrothers.de",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=8.2",
+    "ext-json": "*",
+    "ramsey/uuid": "*",
+    "symfony/console": "*",
+    "symfony/http-client": "*",
+    "symfony/serializer": "*",
+    "symfony/string": "*",
+    "symfony/yaml": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "NetBrothers\\NbGoogleApiBundle\\": "src/"
+    }
+  }
+}
